@@ -47,7 +47,7 @@ const ScrollableCard = ({ navigation, productList }) => {
     const renderCard = ({ item }) => (
         <TouchableOpacity
             style={{ marginLeft: SIZES.padding }}
-            onPress={() => navigation.navigate( item.productId == 1? screenNames.DATA_COLLECTION_SCREEN : screenNames.LOCATION_SELECT_SCREEN)}
+            onPress={() => navigation.navigate( item.productId == 1? screenNames.DATA_COLLECTION_SCREEN : screenNames.NAVIGATION_HOME_SCREEN)}
         >
             <View style={{ width: SIZES.width / 2.3, height:600}}>
                 <Image
